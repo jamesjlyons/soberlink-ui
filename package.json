@@ -9,7 +9,9 @@
     "postcss-nested": "^4.2.1",
     "postcss-nesting": "^7.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@storybook/addon-docs": "^5.3.19"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
