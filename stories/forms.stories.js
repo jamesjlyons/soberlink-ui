@@ -4,4 +4,5 @@ export default {
 
 // import "../src/base.css";
 
-export const Button = () => `<input>Default Btn</input>`;
+export const Text = () => `<label>First name</label><br />
+      <input type="text" name="first_name" />`;
