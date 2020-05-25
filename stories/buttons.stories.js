@@ -4,23 +4,10 @@ export default {
 
 // import "../src/base.css";
 
-export const Button = () => {
-  const btn = document.createElement("button");
-  btn.type = "button";
-  btn.classList.add("btn");
-  btn.innerText = "Default Button";
-  btn.addEventListener("click", (e) => console.log(e));
-  return btn;
-};
+export const Button = () => `<button class="btn">Default Btn</button>`;
 
-export const ButtonSecondary = () => {
-  const btn = document.createElement("button");
-  btn.type = "button";
-  btn.classList.add("btn", "btn-secondary");
-  btn.innerText = "Secondary Button";
-  btn.addEventListener("click", (e) => console.log(e));
-  return btn;
-};
+export const SecondaryButton = () =>
+  `<button class="btn btn-secondary">Secondary Button</button>`;
 
 export const ButtonLoading = () => {
   const btn = document.createElement("button");
