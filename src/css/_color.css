@@ -78,6 +78,7 @@
   --surface-border: var(--gray-5);
   --link: var(--blue-50);
   --link-hover: var(--blue-60);
+  --link-active: var(--blue-50);
   --input-bg: var(--surface-color);
   --input-border: var(--gray-20);
   /* --btn-primary-bg: var(--blue-40); */
@@ -94,6 +95,7 @@
     --surface-border: var(--gray-70);
     --link: var(--blue-40);
     --link-hover: var(--blue-30);
+    --link-active: var(--blue-40);
     --input-bg: var(--surface-color);
     --input-border: var(--gray-20);
   }
