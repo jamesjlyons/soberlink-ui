@@ -80,6 +80,7 @@
   --link-hover: var(--blue-60);
   --input-bg: var(--surface-color);
   --input-border: var(--gray-20);
+  --btn-primary-bg: var(--blue-40);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -18,7 +18,7 @@
   border-radius: 50%;
   border: 0 none;
   margin-right: 0;
-  transition: all 0.5s;
+  transition: all 0.3s ease-in-out;
 }
 .loading:before {
   content: "";
