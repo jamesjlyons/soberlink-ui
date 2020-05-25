@@ -35,7 +35,7 @@ input[type="button"], */
   }
   &.btn-secondary {
     box-sizing: border-box;
-    background: transparent;
+    background: var(--surface-color);
     color: var(--link);
     border: 2px solid var(--gray-30);
     &:hover {
@@ -47,6 +47,11 @@ input[type="button"], */
       background-color: var(--blue-60);
       border: 2px solid var(--blue-60);
     }
+  }
+
+  &.btn-block {
+    display: block;
+    width: 100%;
   }
 
   /* &.btn-secondary {
@@ -80,34 +85,3 @@ input[type="button"]:disabled,
     box-shadow: none;
   }
 }
-
-//
-// Block button
-//
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-/* .btn {
-  display: inline-block;
-  font-weight: 700;
-  line-height: $btn-line-height;
-  color: $body-color;
-  text-align: center;
-  text-decoration: if($link-decoration == none, null, none);
-  white-space: $btn-white-space;
-  vertical-align: middle;
-  cursor: if($enable-button-pointers, pointer, null);
-  user-select: none;
-  background-color: transparent;
-  border: $btn-border-width solid transparent;
-  @include button-size(
-    $btn-padding-y,
-    $btn-padding-x,
-    $btn-font-size,
-    $btn-border-radius
-  );
-  @include transition($btn-transition);
-} */
