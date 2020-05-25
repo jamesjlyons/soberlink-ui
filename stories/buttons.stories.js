@@ -24,3 +24,6 @@ export const ButtonLoading = () => {
   btn.addEventListener("click", () => loadTimer());
   return btn;
 };
+
+export const BlockButtons = () =>
+  `<button class="btn btn-block">Primary Block Button</button><button class="btn btn-secondary btn-block">Secondary Block Button</button>`;
