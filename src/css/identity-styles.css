@@ -6,7 +6,8 @@ body {
 
 .identity-form-containter {
   background-color: white;
-  max-width: 346px;
+  width: 100%;
+  max-width: 320px;
   padding: 24px;
 }
 
