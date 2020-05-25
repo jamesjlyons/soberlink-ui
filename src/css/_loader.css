@@ -1,0 +1,40 @@
+/* .ld {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  margin: -0.5em;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s;
+  transition-timing-function: ease-in;
+} */
+.btn-load:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 0 none;
+  margin-right: 0;
+  transition: all 0.5s;
+}
+.loading:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #99ccff;
+  border-top-color: #fff;
+  margin-right: 8px;
+  animation: rotating 1s infinite;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

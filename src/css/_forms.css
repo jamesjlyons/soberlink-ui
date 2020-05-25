@@ -1,0 +1,22 @@
+textarea,
+select,
+input {
+  padding: 4px 8px;
+  margin-bottom: 0.5rem;
+  background: var(--surface-color);
+  color: var(--text-1);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    box-shadow: 0 0 0px 2px rgba(60, 166, 208, 1);
+  }
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
