@@ -1,10 +1,31 @@
+import { withDesign } from "storybook-addon-designs";
+import { withKnobs, select } from "@storybook/addon-knobs";
+
 export default {
   title: "Buttons",
+  decorators: [withDesign, withKnobs],
+  parameters: {
+    design: {
+      type: "figma",
+      url:
+        "https://www.figma.com/file/ANzyZWB7Xh5mylANfEVKfj/Web-Component-Library?node-id=5%3A117",
+    },
+  },
 };
 
 // import "../src/base.css";
 
-export const Button = () => `<button class="btn">Default Btn</button>`;
+// export const DefaultButton = () => `<button class="btn">Default Btn</button>`;
+export const DefaultButton = () => {
+  const types = {
+    Default: null,
+    Secondary: "btn-secondary",
+    Ghost: "btn-ghost",
+  };
+  const type = select("Types", types, null);
+
+  return `<button class="btn ${type}">Default Btn</button>`;
+};
 
 export const SecondaryButton = () =>
   `<button class="btn btn-secondary">Secondary Button</button>`;
