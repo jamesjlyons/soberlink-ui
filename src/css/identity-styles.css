@@ -1,19 +1,88 @@
+html,
+body {
+  min-height: 100vh;
+}
+
 body {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  flex-basis: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100%;
+  flex-grow: 1;
 }
 
 .identity-form-containter {
-  background-color: var(--surface-color);
   width: 100%;
   max-width: 320px;
-  padding: 24px;
+  padding: 40px 24px 24px 24px;
+  border: none;
+  box-sizing: border-box;
+  background-color: none;
+  /* Card Shadow */
+  box-shadow: none;
+  & > h4 {
+    margin-top: 0;
+  }
 }
 
 .form-actions {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.identity-form-check {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.identity-footer {
+  width: 100%;
+  padding: 48px 0 16px 0px;
+  /* flex-basis: 0; */
+  & ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    & li {
+      margin: 8px 16px;
+      & a {
+        word-wrap: none;
+        color: var(--gray-50);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .identity-form-containter {
+    background-color: var(--surface-color);
+    border: 1px solid var(--surface-border);
+    box-sizing: border-box;
+    /* Card Shadow */
+    box-shadow: 0px 8px 32px rgba(28, 34, 36, 0.08);
+    border-radius: 6px;
+  }
+  .identity-footer {
+    & ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

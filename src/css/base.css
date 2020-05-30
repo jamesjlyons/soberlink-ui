@@ -1,4 +1,6 @@
-/* css tokens */
+/* import adelle sans */
+@import url("https://use.typekit.net/yvk7fjz.css");
+/* import partials */
 @import "./normalize.css";
 @import "./_color.css";
 @import "./_buttons.css";
@@ -20,6 +22,9 @@
 html {
   /* Set body font family and some finicky elements */
   font-family: var(--font-sans);
+
+  /* breakpoints */
+  --for-phone-only: (min-width: 768px) and (max-width: 992px);
 }
 
 body {
@@ -29,6 +34,12 @@ body {
   color: var(--text-2);
   font-size: 1rem;
   line-height: 1.5;
+}
+
+@media var(--for-phone-only) {
+  body {
+    background: red;
+  }
 }
 
 h1,

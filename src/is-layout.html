@@ -9,27 +9,48 @@
     <link rel="stylesheet" href="./css/identity-styles.css" />
   </head>
   <body>
-    <div class="logo"></div>
-    <div class="identity-form-containter">
-      <h4>Form Title</h4>
-      <div class="alert"></div>
-      <form action="">
-        <div>
-          <label>Email</label><br />
-          <input class="block" type="email" name="email" required="" />
-        </div>
-        <div>
-          <div class="label-flex">
-            <label>Password</label>
-            <a href="#" class="label-link">Forgot Password?</a>
-          </div>
-          <input class="block" type="password" name="password" required="" />
-        </div>
-        <div class="form-actions">
-          <button class="btn btn-block">Login</button>
-          <a href="#">Create Account</a>
-        </div>
-      </form>
+    <div class="logo">
+      <img src="./static/soberlink logomark.svg" alt="Soberlink Logo" />
     </div>
+    <main>
+      <div class="identity-form-containter">
+        <h4>Form Title</h4>
+        <div class="alert"></div>
+        <form action="">
+          <div>
+            <label>Email</label><br />
+            <input class="block" type="email" name="email" required="" />
+          </div>
+          <div>
+            <div class="label-flex">
+              <label>Password</label>
+              <a href="#" class="label-link">Forgot Password?</a>
+            </div>
+            <input class="block" type="password" name="password" required="" />
+          </div>
+          <div>
+            <input type="checkbox" id="remember" name="remember" />
+            <label class="identity-form-check" for="remember"
+              >Remember this device</label
+            >
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-block">Login</button>
+            <a href="#">Create Account</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="identity-footer">
+      <ul>
+        <li>
+          <a href="">Support</a>
+        </li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">HIPAA Compliant Statement</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
