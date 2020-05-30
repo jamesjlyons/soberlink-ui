@@ -23,7 +23,7 @@ main {
 
 .identity-form-containter {
   width: 100%;
-  max-width: 320px;
+  min-width: 320px;
   padding: 40px 24px 24px 24px;
   border: none;
   box-sizing: border-box;
@@ -32,6 +32,7 @@ main {
   box-shadow: none;
   & > h4 {
     margin-top: 0;
+    margin-bottom: 32px;
   }
 }
 
@@ -39,11 +40,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.identity-form-check {
-  font-weight: 400;
-  font-size: 14px;
+  margin-top: 32px;
 }
 
 .identity-footer {
