@@ -19,6 +19,9 @@ input {
     width: 100%;
     margin: 4px 0 16px 0;
   }
+  &.large {
+    padding: 8px 16px;
+  }
 }
 
 label {
