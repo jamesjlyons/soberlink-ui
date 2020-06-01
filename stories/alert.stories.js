@@ -32,3 +32,18 @@ export const AlertError = () => `<div class="alert alert-error">
 </div>
 This is an alert bar
 </div>`;
+
+export const AlertSuccess = () => `<div class="alert alert-success">
+<div class="alert-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+<g clip-path="url(#clip0)">
+  <path fill="#007B2D" d="M8 0a8 8 0 108 8 8.01 8.01 0 00-8-8zm4.618 5.467l-4.563 6.192a.674.674 0 01-.954.126L3.843 9.179a.667.667 0 11.833-1.041l2.717 2.174 4.152-5.634a.665.665 0 011.129.031.669.669 0 01-.056.758z"/>
+</g>
+<defs>
+  <clipPath id="clip0">
+    <path fill="#fff" d="M0 0h16v16H0z"/>
+  </clipPath>
+</defs>
+</svg>
+</div>
+This is an alert bar
+</div>`;

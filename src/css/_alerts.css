@@ -21,4 +21,10 @@
     background: var(--red-0);
     border: 1px solid var(--red-10);
   }
+
+  &.alert-success {
+    color: var(--green-50);
+    background: var(--green-0);
+    border: 1px solid var(--green-10);
+  }
 }
