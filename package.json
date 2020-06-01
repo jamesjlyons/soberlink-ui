@@ -1,9 +1,11 @@
 {
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
-    "@storybook/html": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/html": "^5.3.19",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "cssnano": "^4.1.10",
