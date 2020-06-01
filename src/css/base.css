@@ -6,6 +6,7 @@
 @import "./_buttons.css";
 @import "./_loader.css";
 @import "./_forms.css";
+@import "./_alerts.css";
 
 :root {
   /* typography */

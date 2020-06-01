@@ -1,0 +1,24 @@
+.alert {
+  display: flex;
+  align-items: center;
+  & > .alert-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+  padding: 8px;
+  margin-bottom: 16px;
+  color: var(gray-100);
+  background: var(--gray-5);
+  border: 1px solid var(--gray-40);
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(28, 34, 36, 0.08);
+  border-radius: 2px;
+  vertical-align: middle;
+
+  &.alert-error {
+    color: var(--red-50);
+    background: var(--red-0);
+    border: 1px solid var(--red-10);
+  }
+}
