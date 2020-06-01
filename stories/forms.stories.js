@@ -12,5 +12,11 @@ export const TextLarge = () => `<label>First name</label><br />
 
 export const TextBlock = () => `<label>First name</label><br />
       <input type="text" name="first_name" class="block" />`;
+
 export const TextBlockLarge = () => `<label>First name</label><br />
       <input type="text" name="first_name" class="large block" />`;
+
+export const Checkbox = () => `<label class="check-radio-container">First checkbox
+<input type="checkbox" checked="checked"/>
+<div class="checkmark"></div>
+</label>`;
