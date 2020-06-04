@@ -1,6 +1,6 @@
 import { configure } from "@storybook/html";
 
-import "../src/css/base.css";
+import "../src/css/atrium-styles.css";
 
 const req = require.context("../stories", true, /.stories.js$/);
 
