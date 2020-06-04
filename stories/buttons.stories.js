@@ -41,7 +41,7 @@ export const ButtonLoading = () => {
   // btn.innerHTML = `<div class="ld" style="width:1em;height:1em;background:currentColor;"></div> Loading`;
   function loadTimer() {
     btn.classList.add("loading");
-    setTimeout(function () {
+    setTimeout(function() {
       btn.classList.remove("loading");
     }, 5000);
   }
@@ -55,7 +55,7 @@ export const BlockButtons = () =>
   <button class="btn btn-ghost btn-block">Ghost Block Button</button>
   `;
 
-export const BButtonLoading = () => {
+export const BlockButtonLoading = () => {
   const btn = document.createElement("button");
   btn.type = "button";
   btn.classList.add("btn", "btn-block", "btn-load");
@@ -63,7 +63,7 @@ export const BButtonLoading = () => {
   // btn.innerHTML = `<div class="ld" style="width:1em;height:1em;background:currentColor;"></div> Loading`;
   function loadTimer() {
     btn.classList.add("loading");
-    setTimeout(function () {
+    setTimeout(function() {
       btn.classList.remove("loading");
     }, 5000);
   }
