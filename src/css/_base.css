@@ -1,0 +1,16 @@
+/* Base styling
+   ========================================================================== */
+
+body {
+  background: var(--bg-1);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}

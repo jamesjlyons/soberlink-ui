@@ -1,0 +1,9 @@
+/* import partials */
+@import "./normalize.css";
+@import "./_color.css";
+@import "./_typography.css";
+@import "./_base.css";
+@import "./_buttons.css";
+@import "./_loader.css";
+@import "./_forms.css";
+@import "./_alerts.css";
