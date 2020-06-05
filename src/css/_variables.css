@@ -83,6 +83,10 @@
   --input-border: var(--gray-20);
   /* --btn-primary-bg: var(--blue-40); */
   /* --btn-secondary-bg: var(--surface-color); */
+
+  /* Border radii */
+  --radius-sm: 2px;
+  --radius-lg: 6px;
 }
 
 @media (prefers-color-scheme: dark) {
