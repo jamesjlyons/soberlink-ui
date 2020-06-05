@@ -1,3 +1,5 @@
+/* Base Input Styling + Text Inputs
+   ========================================================================== */
 textarea,
 select,
 input {
@@ -6,12 +8,13 @@ input {
   background: var(--surface-color);
   color: var(--text-1);
   border: 1px solid var(--surface-border);
-  border-radius: var(--radius-sm);
+  border-radius: 2px;
   box-shadow: none;
   box-sizing: border-box;
   transition: box-shadow 0.3s ease-in-out;
 
   &:focus {
+    outline: none;
     box-shadow: 0 0 0px 2px rgba(60, 166, 208, 1);
   }
   &.block {
@@ -45,6 +48,31 @@ label {
   align-items: flex-end;
   width: 100%;
 }
+
+/* Select - custom styling
+   ========================================================================== */
+select {
+  appearance: none;
+  padding-right: 28px !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none'%3E%3Cpath fill='%233B4447' d='M9.823 2.995a.667.667 0 00-.581-.34H2.758a.667.667 0 00-.57 1.012L5.43 9.023a.667.667 0 001.14 0l3.242-5.356a.667.667 0 00.01-.672z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  /* arrow icon position (1em from the right, 50% vertical)*/
+  background-position: right 0.7em top 50%;
+  /* background-size: 0.65em auto; */
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  select {
+    /* different dropdown icon color for dark theme */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none'%3E%3Cpath fill='%23D3DADD' d='M9.823 2.995a.667.667 0 00-.581-.34H2.758a.667.667 0 00-.57 1.012L5.43 9.023a.667.667 0 001.14 0l3.242-5.356a.667.667 0 00.01-.672z'/%3E%3C/svg%3E");
+  }
+}
+
+/* Checkbox
+   ========================================================================== */
 
 /* Customize checkbox/radio label (the container) */
 .check-radio-container {
@@ -90,6 +118,7 @@ label {
 
   & input:focus ~ .checkmark {
     /* When the checkbox is focused, add a blue border */
+    outline: none;
     box-shadow: 0 0 0px 2px rgba(60, 166, 208, 1);
   }
 

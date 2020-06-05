@@ -16,6 +16,33 @@ export const TextBlock = () => `<label>First name</label><br />
 export const TextBlockLarge = () => `<label>First name</label><br />
       <input type="text" name="first_name" class="large block" />`;
 
+export const Select = () => `<label>Select</label><br />
+      <select />
+            <option>This is a native select element</option>
+            <option>Apples</option>
+            <option>Bananas</option>
+            <option>Grapes</option>
+            <option>Oranges</option>
+      </select>`;
+
+export const SelectLarge = () => `<label>Select</label><br />
+      <select class="large" />
+            <option>This is a native select element</option>
+            <option>Apples</option>
+            <option>Bananas</option>
+            <option>Grapes</option>
+            <option>Oranges</option>
+      </select>`;
+
+export const SelectLargeBlock = () => `<label>Select</label><br />
+      <select class="large block" />
+            <option>This is a native select element</option>
+            <option>Apples</option>
+            <option>Bananas</option>
+            <option>Grapes</option>
+            <option>Oranges</option>
+      </select>`;
+
 export const Checkbox = () => `<label class="check-radio-container">First checkbox
 <input type="checkbox" checked="checked"/>
 <div class="checkmark"></div>
