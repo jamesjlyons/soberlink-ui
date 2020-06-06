@@ -6,6 +6,7 @@
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/html": "^5.3.19",
+    "@whitespace/storybook-addon-html": "^1.2.1",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "cssnano": "^4.1.10",
