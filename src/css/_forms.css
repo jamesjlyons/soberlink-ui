@@ -153,9 +153,15 @@ select {
   }
 }
 
+/* Code Input
+   ========================================================================== */
+
 .input-code {
   & input.code-box {
+    font-size: 32px;
     width: 48px;
+    appearance: textfield;
+    text-align: center;
+    margin-right: 8px;
   }
-  background: red;
 }

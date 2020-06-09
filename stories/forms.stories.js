@@ -30,7 +30,7 @@ export const TextWithLink = () => `<div style="width: min-content">
                                     </div>`;
 
 export const Select = () => `<label>Select</label><br />
-      <select />
+      <select>
             <option>This is a native select element</option>
             <option>Apples</option>
             <option>Bananas</option>
@@ -39,7 +39,7 @@ export const Select = () => `<label>Select</label><br />
       </select>`;
 
 export const SelectLarge = () => `<label>Select</label><br />
-      <select class="large" />
+      <select class="large">
             <option>This is a native select element</option>
             <option>Apples</option>
             <option>Bananas</option>
@@ -56,7 +56,45 @@ export const SelectLargeBlock = () => `<label>Select</label><br />
             <option>Oranges</option>
       </select>`;
 
-export const Checkbox = () => `<label class="check-radio-container">First checkbox
+export const Checkbox = () => `<label class="check-radio-container">Checked
 <input type="checkbox" checked="checked"/>
 <div class="checkmark"></div>
 </label>`;
+
+export const CodeInput = () => {
+  return `<label>Code</label><br />
+<div class="input-code">
+<input
+  class="code-box"
+  id="codeBox1"
+  type="number"
+  maxlength="1"
+  onkeyup="onKeyUpEvent(1, event)"
+  onfocus="onFocusEvent(1)"
+/>
+<input
+  class="code-box"
+  id="codeBox2"
+  type="number"
+  maxlength="1"
+  onkeyup="onKeyUpEvent(2, event)"
+  onfocus="onFocusEvent(2)"
+/>
+<input
+  class="code-box"
+  id="codeBox3"
+  type="number"
+  maxlength="1"
+  onkeyup="onKeyUpEvent(3, event)"
+  onfocus="onFocusEvent(3)"
+/>
+<input
+  class="code-box"
+  id="codeBox4"
+  type="number"
+  maxlength="1"
+  onkeyup="onKeyUpEvent(4, event)"
+  onfocus="onFocusEvent(4)"
+/>
+</div>`;
+};
