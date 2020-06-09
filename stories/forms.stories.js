@@ -16,6 +16,19 @@ export const TextBlock = () => `<label>First name</label><br />
 export const TextBlockLarge = () => `<label>First name</label><br />
       <input type="text" name="first_name" class="large block" />`;
 
+export const TextWithLink = () => `<div style="width: min-content">
+                                    <div class="label-flex">
+                                    <label>Password</label>
+                                    <a href="#" class="label-link">Forgot Password?</a>
+                                    </div>
+                                    <input
+                                    class="large"
+                                    type="password"
+                                    name="password"
+                                    required=""
+                                    />
+                                    </div>`;
+
 export const Select = () => `<label>Select</label><br />
       <select />
             <option>This is a native select element</option>
